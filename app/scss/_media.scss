@@ -24,8 +24,7 @@
 
 @media (max-width: 1420px){
     .popularity{
-        background-size: 750px;
-        
+        background-size: 750px; 
     }
 }
 
@@ -35,7 +34,6 @@
         margin-top: 140px;
         margin-bottom: 442px;
         position: relative;
-        // margin-bottom: 660px;
     }
     .popularity__wrapper{
         flex-direction: column-reverse;
@@ -88,7 +86,6 @@
             padding: 0;
         }
     }
-
     .history__item{
         width: 100%;
         max-width: none;
@@ -252,8 +249,7 @@
     .tab__text{
         left: 0;
         right: 0;
-        margin: 0 auto;
-        
+        margin: 0 auto;  
     }
     .tab__text .tab__text-inner .text-inner__button{
         left: 122px;
@@ -285,8 +281,7 @@
         .component__top-text{
             max-width: 500px;
             margin: 0 auto;
-            padding-bottom: 45px;
-            
+            padding-bottom: 45px;  
         }
     }
     .component__item-second{
@@ -416,7 +411,6 @@
             }
         }
     }
-    
 }
 
 @media (max-width: 1040px){
@@ -550,7 +544,6 @@
     .component__row-bottom{
         justify-content: space-around;
     }
-
 }
 
 @media (max-width: 768px){
@@ -604,21 +597,22 @@
     .popularity__banner{
         padding: 0px;
         width: 100%;
-    }
-    .popularity__banner .popularity__banner-inner{
-        border: none;
-        padding: 35px 35px 110px 35px;
-        text-align: center;
-        .banner__buttom{
+        &-inner{
+            border: none;
+            padding: 35px 35px 110px 35px;
             text-align: center;
-            &:after{
-                display: none;
+            .banner__buttom{
+                text-align: center;
+                &:after{
+                    display: none;
+                }
             }
         }
+        .popularity__banner-inner .banner__buttom{
+            padding-left: 0px;
+        }
     }
-    .popularity__banner .popularity__banner-inner .banner__buttom{
-        padding-left: 0px;
-    }
+    
     .populatity__image-mobile{
         display: block;
         background-image: url(../img/popularity-bg.jpg);
@@ -737,7 +731,6 @@
             background-color: #f6f9f3;
         }
     }
-    
     .additional__item{
         width: auto;
         height: 220px;
